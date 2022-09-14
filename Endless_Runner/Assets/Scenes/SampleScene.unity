@@ -169,7 +169,6 @@ GameObject:
   - component: {fileID: 226518629}
   - component: {fileID: 226518627}
   - component: {fileID: 226518625}
-  - component: {fileID: 226518628}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -299,24 +298,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 226518622}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b475fe6f0f478164dac7f046d05d4042, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerspeed: 5
-  jumpforce: 6
-  groundChecker: {fileID: 1623558121}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
---- !u!114 &226518628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 226518622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1a1311a4c94cab0479e471acf8d54b01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -331,14 +312,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 226518622}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6e055092d1954e42ab6e47ba9caa3c3, type: 3}
+  m_Script: {fileID: 11500000, guid: b475fe6f0f478164dac7f046d05d4042, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprintspeed: 22
-  rushtime: 20000
-  rush: 1
-  cooldown: 200
-  cool: 1
+  normalspeed: 5
+  jumpforce: 5
+  inrush: 0
+  rushspeed: 15
+  rushcooldown: 0
+  maxrushcooldown: 1000
+  rushregenerate: 1
+  rushheat: 0
+  rushheatlimit: 1000
+  rushlevitation: 0.15
+  groundChecker: {fileID: 1623558121}
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &312363493
 GameObject:
   m_ObjectHideFlags: 0
