@@ -17,6 +17,9 @@ public class PlayerController : MonoBehaviour
     public int rushheat = 0; // How long until the player is forced out of a rush
     public int rushheatlimit = 100; // The upper limit to a player's heat
     public float rushlevitation = 0.0f; // The vertical distance a rush gets
+    public float lastmovement = 1.0f; // The last direction the player moved in
+    public bool rushjump = false; // If the player used their second jump
+    public float rushjumpforce = 200.0f; // The force of their second jump
 
     int playerspeed = 0;
 
@@ -37,6 +40,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift) && rushcooldown == 0)
         {
             inrush = true;
+            rushjump = true;
         }
         if (Input.GetKeyUp(KeyCode.LeftShift) && inrush == true)
         {
@@ -61,13 +65,21 @@ public class PlayerController : MonoBehaviour
             playerspeed = rushspeed;
             rushheat = rushheat + 1;
             float movementValueX = Input.GetAxis("Horizontal");
-            playerObject.velocity = new Vector2 (playerspeed,rushlevitation);
+            playerObject.velocity = new Vector2 (lastmovement*playerspeed,rushlevitation);
         }   
         if (inrush == false)
         {
             playerspeed = normalspeed;
             float movementValueX = Input.GetAxis("Horizontal");
-            playerObject.velocity = new Vector2 (movementValueX * playerspeed, playerObject.velocity.y);
+            if (movementValueX > 0)
+            {
+                lastmovement = 1;
+            }
+            if (movementValueX < 0)
+            {
+                lastmovement = -1;
+            }
+            playerObject.velocity = new Vector2 (movementValueX*playerspeed, playerObject.velocity.y);
         }
 
         isOnGround = Physics2D.OverlapCircle(groundChecker.transform.position, 0.2f, whatIsGround);
@@ -76,6 +88,20 @@ public class PlayerController : MonoBehaviour
         {
 
             playerObject.AddForce(new Vector2(0.0f,jumpforce * 100.0f));
+
+        }
+
+        if (isOnGround == true && rushjump == true)
+        {
+            rushjump = false;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) && isOnGround == false && rushjump == true)
+        {
+
+            playerObject.AddForce(new Vector2(0.0f,jumpforce * rushjumpforce));
+            rushjump = false;
+            rushcooldown = maxrushcooldown * 5;
 
         }
 
