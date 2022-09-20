@@ -15,6 +15,7 @@ public class PeopleDetector : MonoBehaviour
 
     public bool isDead = false;
     public bool isScored = false;
+    public bool angelMode = false;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +27,7 @@ public class PeopleDetector : MonoBehaviour
     void Update()
     {
 
-        maxium += 1
+        maxium += 1;
         
         if (isDead == false)
         {
@@ -37,9 +38,13 @@ public class PeopleDetector : MonoBehaviour
 
         if (isDead == true && isScored == false)
         {
-            currentObject.AddForce(new Vector2(0.0f,33.0f));
             isScored = true;
             points += 1;
+        }
+
+        if (isDead == true && angelMode == true) 
+        {
+                currentObject.AddForce(new Vector2(0.0f,33.0f));
         }
 
     }
