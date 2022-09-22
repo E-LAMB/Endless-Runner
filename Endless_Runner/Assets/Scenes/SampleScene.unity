@@ -149,11 +149,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 34308790}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20, y: -21.337803, z: -7.6337757}
+  m_LocalPosition: {x: 20, y: -40, z: -7.6337757}
   m_LocalScale: {x: 9999, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &34308792
 BoxCollider2D:
@@ -410,7 +410,6 @@ GameObject:
   - component: {fileID: 1435492433}
   - component: {fileID: 1435492432}
   - component: {fileID: 1435492435}
-  - component: {fileID: 1435492431}
   m_Layer: 0
   m_Name: DeathBarrier
   m_TagString: Untagged
@@ -418,21 +417,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1435492431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1435492430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a2ff9bcd876e9042bea4641a884ef73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectsToSpawn: []
-  distance: 20
-  spawntime: 3
 --- !u!114 &1435492432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -445,7 +429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddb38ef0f6c83c14e8011fb3232382e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 8
 --- !u!212 &1435492433
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -505,11 +489,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1435492430}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -60, y: 0, z: 0}
+  m_LocalPosition: {x: -100, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 400, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1435492435
 Rigidbody2D:
@@ -570,8 +554,14 @@ MonoBehaviour:
   - {fileID: 4425979373765831955, guid: d2715c38b4962584ebbccb7575f9c573, type: 3}
   - {fileID: 6089986297372662776, guid: 337e0139ff437394aa86bb88110ac068, type: 3}
   - {fileID: 2772110284936509936, guid: fdd95b79db9c4724f843c876f2e958b5, type: 3}
+  - {fileID: 8086971724482794365, guid: cdd68201c3f8636448e374f5998284c1, type: 3}
+  - {fileID: 2812565727905389684, guid: 788310b4f1f28774b90378bedda89999, type: 3}
+  - {fileID: 645423885063939734, guid: e7f72a1b2d22f9c41837ea8d7fbdcb0d, type: 3}
+  - {fileID: 4166924748828714258, guid: 4e1549ebc7823a74089d853931fa2466, type: 3}
+  - {fileID: 2355938618073243143, guid: e8bb3376abe6fc4409158e75503f6334, type: 3}
+  - {fileID: 4304508972188859195, guid: 887a644d784e79341a05e26d935fe568, type: 3}
   distance: 20
-  spawntime: 2.5
+  spawntime: 2.6
 --- !u!4 &1978183590
 Transform:
   m_ObjectHideFlags: 0
