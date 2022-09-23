@@ -562,6 +562,8 @@ MonoBehaviour:
   - {fileID: 4304508972188859195, guid: 887a644d784e79341a05e26d935fe568, type: 3}
   - {fileID: 3271689345913491771, guid: fa88378a65525204abff77ea610d376b, type: 3}
   - {fileID: 3627453961197437698, guid: 57939ce02c1d0f243aca9aed620856c3, type: 3}
+  - {fileID: 1373716434290616453, guid: 919c6648eaa3dad41a2c5f45057aa96d, type: 3}
+  - {fileID: 563160102647644742, guid: c67551a243eade64092834e058a81c4d, type: 3}
   distance: 20
   spawntime: 2.6
 --- !u!4 &1978183590
