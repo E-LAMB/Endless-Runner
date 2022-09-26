@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     public float rushlevitation = 0.0f; // The vertical distance a rush gets
     public float lastmovement = 1.0f; // The last direction the player moved in
     public bool rushjump = false; // If the player used their second jump
+    public bool rushjumpactive = true; // If the player is even given a rush jump
     public float rushjumpforce = 200.0f; // The force of their second jump
 
     int playerspeed = 0;
@@ -40,7 +41,10 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift) && rushcooldown == 0)
         {
             inrush = true;
-            rushjump = true;
+            if (rushjumpactive == true)
+            {
+                rushjump = true;
+            }
         }
         if (Input.GetKeyUp(KeyCode.LeftShift) && inrush == true)
         {
@@ -101,7 +105,7 @@ public class PlayerController : MonoBehaviour
 
             playerObject.AddForce(new Vector2(0.0f,jumpforce * rushjumpforce));
             rushjump = false;
-            rushcooldown = maxrushcooldown * 5;
+            rushcooldown = maxrushcooldown * 2;
 
         }
 

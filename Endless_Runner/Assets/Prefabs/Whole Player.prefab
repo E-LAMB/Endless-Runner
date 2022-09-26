@@ -287,11 +287,12 @@ MonoBehaviour:
   maxrushcooldown: 1500
   rushregenerate: 1
   rushheat: 0
-  rushheatlimit: 200
+  rushheatlimit: 300
   rushlevitation: 5
   lastmovement: 0
   rushjump: 0
-  rushjumpforce: 200
+  rushjumpactive: 1
+  rushjumpforce: 150
   groundChecker: {fileID: 4827620879676918104}
   whatIsGround:
     serializedVersion: 2
