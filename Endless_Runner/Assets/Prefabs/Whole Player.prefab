@@ -280,7 +280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   normalspeed: 8
-  jumpforce: 5
+  jumpforce: 4
   inrush: 0
   rushspeed: 40
   rushcooldown: 0
@@ -291,7 +291,7 @@ MonoBehaviour:
   rushlevitation: 5
   lastmovement: 0
   rushjump: 0
-  rushjumpactive: 1
+  rushjumpactive: 0
   rushjumpforce: 150
   groundChecker: {fileID: 4827620879676918104}
   whatIsGround:
