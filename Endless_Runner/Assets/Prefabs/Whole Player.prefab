@@ -89,7 +89,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4827620879909062484}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.73, z: -20}
+  m_LocalPosition: {x: 0, y: 0.73, z: -200}
   m_LocalScale: {x: 1, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 478494852920632371}
@@ -261,7 +261,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1.8
+  m_GravityScale: 2.2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -279,15 +279,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b475fe6f0f478164dac7f046d05d4042, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalspeed: 8
-  jumpforce: 4
+  normalspeed: 9
+  jumpforce: 5
   inrush: 0
-  rushspeed: 40
+  rushspeed: 50
   rushcooldown: 0
-  maxrushcooldown: 1500
+  maxrushcooldown: 2000
   rushregenerate: 1
   rushheat: 0
-  rushheatlimit: 300
+  rushheatlimit: 350
   rushlevitation: 5
   lastmovement: 0
   rushjump: 0

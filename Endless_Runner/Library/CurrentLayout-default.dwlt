@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Project
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 68
+  controlID: 83
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 69
+  controlID: 16
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 70
+  controlID: 17
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -317,22 +317,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Prefabs/Platforms
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Prefabs/Platforms
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\GitHub\Endless-Runner\Endless_Runner
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 94450000
-    m_LastClickedID: 17812
-    m_ExpandedIDs: 00000000884500009445000000ca9a3b
+    m_SelectedIDs: 96510000
+    m_LastClickedID: 20886
+    m_ExpandedIDs: 00000000224700002847000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -360,7 +360,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000088450000
+    m_ExpandedIDs: 0000000022470000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -483,21 +483,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 42fbffff46fbffff48fbffff
+      m_ExpandedIDs: babdffff48fbffff06430000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: BoxTrapDestroyer
-        m_OriginalName: BoxTrapDestroyer
+        m_Name: Destroyer
+        m_OriginalName: Destroyer
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 30300
+        m_UserData: 17138
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 4
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -543,9 +543,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 32.594814, y: -34.80685, z: -2.0176086}
+    m_Target: {x: -87.05025, y: 6.98979, z: -109.226715}
     speed: 2
-    m_Value: {x: 4.13603, y: 14.636035, z: -5.42746}
+    m_Value: {x: -9.068186, y: -1.680336, z: -1.7325044}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -596,16 +596,16 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 59.559982
+    m_Target: 204.13118
     speed: 2
-    m_Value: 28.474705
+    m_Value: 7.214523
   m_Ortho:
     m_Target: 1
     speed: 2
     m_Value: 1
   m_CameraSettings:
-    m_Speed: 1
-    m_SpeedNormalized: 0.5
+    m_Speed: 0.94053
+    m_SpeedNormalized: 0.47
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -616,7 +616,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewRotation: {x: 0.020243336, y: 0.97584236, z: -0.19153178, w: 0.10313852}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -692,18 +692,18 @@ MonoBehaviour:
       y: 21
       width: 1119
       height: 519
-    m_Scale: {x: 0.24748611, y: 0.24748611}
-    m_Translation: {x: 559.5, y: 252.975}
+    m_Scale: {x: 0.4042969, y: 0.40429693}
+    m_Translation: {x: 559.5, y: 259.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -2260.733
-      y: -1022.1786
-      width: 4521.466
-      height: 2097.0874
+      x: -1383.8839
+      y: -641.855
+      width: 2767.7678
+      height: 1283.71
     m_MinimalGUI: 1
   m_defaultScale: 0.24027778
   m_LastWindowPixelSize: {x: 1119, y: 540}
