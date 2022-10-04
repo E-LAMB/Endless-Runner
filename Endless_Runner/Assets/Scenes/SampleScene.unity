@@ -5439,7 +5439,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddb38ef0f6c83c14e8011fb3232382e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 9.25
+  startspeed: 7
+  maxspeed: 10
+  incrementspeed: 0.1
+  increment_progress: 0
+  increment_requirement: 1000
+  increment_increase: 500
 --- !u!212 &1435492433
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5571,6 +5576,11 @@ MonoBehaviour:
   - {fileID: 1161072422032764322, guid: f087e8a701b65284eaa165f32488d574, type: 3}
   - {fileID: 3866303372473115288, guid: 6c5b0f64961a56246a845109e459d0d9, type: 3}
   - {fileID: 6570621238097889147, guid: d7c362e75f476384f99050dccce5666a, type: 3}
+  - {fileID: 6547204966703203414, guid: b3ff61f0c9a40cd47931e8980d79df54, type: 3}
+  - {fileID: 4308437845987836319, guid: 18b2ade6c136f1b4b82388ed446fdda7, type: 3}
+  - {fileID: 5798084230806248438, guid: c387707531509e347b3a97e794158bc1, type: 3}
+  - {fileID: 7176333685428817305, guid: 315bcc65430e5454499a1042a43bc01d, type: 3}
+  - {fileID: 8838441680339577257, guid: 0f144ad19e3408d43a3d8d3a5aac116d, type: 3}
   distance: 20
   spawntime: 2.6
 --- !u!4 &1978183590
@@ -5620,4 +5630,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddb38ef0f6c83c14e8011fb3232382e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  startspeed: 10
+  maxspeed: 10
+  incrementspeed: 0
+  increment_progress: 0
+  increment_requirement: 99999
+  increment_increase: 99999

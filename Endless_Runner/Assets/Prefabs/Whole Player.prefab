@@ -279,12 +279,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b475fe6f0f478164dac7f046d05d4042, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalspeed: 9
+  normalspeed: 10
   jumpforce: 5
   inrush: 0
   rushspeed: 50
   rushcooldown: 0
-  maxrushcooldown: 2000
+  maxrushcooldown: 2200
   rushregenerate: 1
   rushheat: 0
   rushheatlimit: 350
