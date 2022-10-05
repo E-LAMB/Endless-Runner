@@ -11,11 +11,10 @@ public class PlayerController : MonoBehaviour
 
     public bool inrush = false;
     public int rushspeed = 1;
-    public int rushcooldown = 0;
-    public int maxrushcooldown = 100; // The cooldown of a rush
-    public int rushregenerate = 1; // The speed at which a rush regenerates
-    public int rushheat = 0; // How long until the player is forced out of a rush
-    public int rushheatlimit = 100; // The upper limit to a player's heat
+    public float rushcooldown = 0f;
+    public float maxrushcooldown = 100f; // The cooldown of a rush
+    public float rushheat = 0f; // How long until the player is forced out of a rush
+    public float rushheatlimit = 100f; // The upper limit to a player's heat
     public float rushlevitation = 0.0f; // The vertical distance a rush gets
     public float lastmovement = 1.0f; // The last direction the player moved in
     public bool rushjump = false; // If the player used their second jump
@@ -38,7 +37,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift) && rushcooldown == 0)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && rushcooldown < 1)
         {
             inrush = true;
             if (rushjumpactive == true)
@@ -55,19 +54,19 @@ public class PlayerController : MonoBehaviour
 
         if (rushcooldown > 0)
         {
-            rushcooldown = rushcooldown - rushregenerate;
+            rushcooldown = rushcooldown - Time.deltaTime;
         }
         if (rushheat > rushheatlimit)
         {
             inrush = false;
             rushheat = 0;
-            rushcooldown = maxrushcooldown * 2;
+            rushcooldown = maxrushcooldown;
         }
 
         if (inrush == true)
         {
             playerspeed = rushspeed;
-            rushheat = rushheat + 1;
+            rushheat = rushheat + Time.deltaTime;
             float movementValueX = Input.GetAxis("Horizontal");
             playerObject.velocity = new Vector2 (lastmovement*playerspeed,rushlevitation);
         }   

@@ -265,7 +265,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!114 &4827620880125470932
 MonoBehaviour:
@@ -280,14 +280,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   normalspeed: 15
-  jumpforce: 5
+  jumpforce: 6
   inrush: 0
-  rushspeed: 50
+  rushspeed: 60
   rushcooldown: 0
-  maxrushcooldown: 2200
-  rushregenerate: 1
+  maxrushcooldown: 5
   rushheat: 0
-  rushheatlimit: 200
+  rushheatlimit: 0.3
   rushlevitation: 5
   lastmovement: 0
   rushjump: 0

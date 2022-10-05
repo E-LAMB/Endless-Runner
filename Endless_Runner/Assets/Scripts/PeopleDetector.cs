@@ -21,13 +21,12 @@ public class PeopleDetector : MonoBehaviour
     void Start()
     {
         currentObject = GetComponent<Rigidbody2D>();
+        maxium += 1;
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        maxium += 1;
         
         if (isDead == false)
         {
