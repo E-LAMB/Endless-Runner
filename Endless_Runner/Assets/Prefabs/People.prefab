@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 427440006832124837}
   - component: {fileID: 427440006832124836}
   - component: {fileID: 427440006832124842}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Body
   m_TagString: Clean
   m_Icon: {fileID: 0}
@@ -161,7 +161,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 427440007148958305}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: People
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -192,7 +192,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 427440007185401806}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Death Detector
   m_TagString: Untagged
   m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}

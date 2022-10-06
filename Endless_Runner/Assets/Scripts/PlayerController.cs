@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public int normalspeed = 1;
     public float jumpforce = 1;
     bool isOnGround = false;
+    public Animator anim;
 
     public bool inrush = false;
     public int rushspeed = 1;
@@ -21,6 +22,8 @@ public class PlayerController : MonoBehaviour
     public bool rushjumpactive = true; // If the player is even given a rush jump
     public float rushjumpforce = 200.0f; // The force of their second jump
 
+    public float movementValueX;
+
     int playerspeed = 0;
 
     public GameObject groundChecker;
@@ -32,11 +35,13 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         playerObject = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame 
     void Update()
     {
+
         if (Input.GetKeyDown(KeyCode.LeftShift) && rushcooldown < 1)
         {
             inrush = true;
@@ -107,6 +112,10 @@ public class PlayerController : MonoBehaviour
             rushcooldown = maxrushcooldown * 2;
 
         }
+
+        anim.SetFloat("Movement", Mathf.Abs(movementValueX));
+        anim.SetBool("IsRushing", inrush);
+        anim.SetBool("IsOnGround", isOnGround);
 
 
 
