@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     public int normalspeed = 1;
     public float jumpforce = 1;
     bool isOnGround = false;
-    public Animator anim;
+    Animator anim;
 
     public bool inrush = false;
     public int rushspeed = 1;
@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     public float rushheatlimit = 100f; // The upper limit to a player's heat
     public float rushlevitation = 0.0f; // The vertical distance a rush gets
     public float lastmovement = 1.0f; // The last direction the player moved in
+	public float movesInt = 1.0f;
     public bool rushjump = false; // If the player used their second jump
     public bool rushjumpactive = true; // If the player is even given a rush jump
     public float rushjumpforce = 200.0f; // The force of their second jump
@@ -90,7 +91,7 @@ public class PlayerController : MonoBehaviour
             playerObject.velocity = new Vector2 (movementValueX*playerspeed, playerObject.velocity.y);
         }
 
-        isOnGround = Physics2D.OverlapCircle(groundChecker.transform.position, 0.2f, whatIsGround);
+        isOnGround = Physics2D.OverlapCircle(groundChecker.transform.position, 0.3f, whatIsGround);
 
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround == true)
         {
@@ -113,7 +114,7 @@ public class PlayerController : MonoBehaviour
 
         }
 
-        anim.SetFloat("Movement", Mathf.Abs(movementValueX));
+        anim.SetFloat("Moves", movesInt);
         anim.SetBool("IsRushing", inrush);
         anim.SetBool("IsOnGround", isOnGround);
 

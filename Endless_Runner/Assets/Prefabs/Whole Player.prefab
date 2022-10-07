@@ -283,6 +283,7 @@ MonoBehaviour:
   normalspeed: 15
   jumpforce: 6
   anim: {fileID: 0}
+  isMoving: 0
   inrush: 0
   rushspeed: 60
   rushcooldown: 0
