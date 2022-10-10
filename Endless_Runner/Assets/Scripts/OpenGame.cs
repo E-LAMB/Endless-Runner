@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class OpenGame : MonoBehaviour
 {
+
+    public int loadtarget = 0;
+
     public void loadGame()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(loadtarget);
     }
 }

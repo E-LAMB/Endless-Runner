@@ -43,6 +43,8 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 
+        movesInt = 0.0f;
+
         if (Input.GetKeyDown(KeyCode.LeftShift) && rushcooldown < 1)
         {
             inrush = true;
@@ -114,7 +116,10 @@ public class PlayerController : MonoBehaviour
 
         }
 
-        anim.SetFloat("Moves", movesInt);
+        movementValueX = Input.GetAxis("Horizontal");
+        movesInt = movementValueX;
+
+        anim.SetFloat("Moves", Mathf.Abs(movesInt));
         anim.SetBool("IsRushing", inrush);
         anim.SetBool("IsOnGround", isOnGround);
 
